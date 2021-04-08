@@ -1,0 +1,284 @@
+body{
+	background: url(../img/bg.jpg);
+	background-size: 100%;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+	font-size: 7rem;
+	margin: 0;
+	color: white;
+	text-shadow: 5px 5px 5px black;
+}
+
+h2{
+	font-size: 3rem;
+	margin: 0;
+	color: white;
+	text-shadow: 5px 5px 5px black;
+}
+
+p{
+    margin: 0;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+img{
+	width: 100%
+}
+
+a{
+	text-decoration: none;
+}
+
+
+/*メインコンテンツ*/
+.header{
+	text-align: center;
+	font-family: 'Anton', sans-serif;
+}
+
+.design{
+	position: relative;
+}
+
+.spec-sheet{
+	margin: 5rem;
+}
+
+.design img{
+	position: absolute;
+    z-index: -1;
+    transform: rotate(-90deg);
+    left: -30rem;
+    top: 20rem;
+    width: 75%;
+}
+
+
+.main-content{
+	display: flex;
+	margin: 10px 30px;
+}
+
+.footer{
+	display: flex;
+	margin: 0 40px;
+}
+
+/*左コンテンツ*/
+
+.main-content-left{
+	width: 70%;
+	margin: 10px 30px;
+}
+.content-image{
+	position: relative;
+}
+
+.content-image img{
+	width: 100%;
+}
+
+.main-content-left .pin:nth-child(1) {
+    top: 2%;
+    left: 1%;
+}
+.main-content-left .pin:nth-child(2) {
+	left: 97%;
+	top: 2%;
+	margin: auto;
+}
+
+.main-content-left .pin:nth-child(4) {
+	top: 97%;
+	left: 1%;
+}
+
+.main-content-left .pin:nth-child(5) {
+	left: 97%;
+	top: 97%;
+	margin: auto;
+}
+
+
+/*右コンテンツ*/
+
+.main-content-right{
+	width: 30%;
+	margin: 10px;
+	background: white;
+	position: relative;
+}
+
+.pin{
+	width: 100%;
+	max-width: 10px;
+	height: 100%;
+	max-height: 10px;
+	background: #F54EA2;
+	border-radius: 50%;
+	position: absolute;
+	box-shadow: inset 4px 1px 3px rgba(0, 0, 0, .25);
+
+}
+
+.main-content-right .pin:nth-child(1) {
+    top: 2%;
+    left: 2%;
+}
+.main-content-right .pin:nth-child(2) {
+	left: 96%;
+	top: 2%;
+	margin: auto;
+}
+
+.main-content-right .pin:nth-child(4) {
+	top: 97%;
+	left: 2%;
+}
+
+.main-content-right .pin:nth-child(5) {
+	left: 96%;
+	top: 97%;
+	margin: auto;
+}
+
+p.fourm-title {
+    font-size: 28px;
+    margin: 10px 0;
+    font-weight: bold;
+    color: orange;
+}
+
+.main-fourm {
+    margin: 20px;
+}
+
+.iw-qr{
+	width: 10%;
+}
+
+.iw-logo{
+	width: 20%;
+}
+
+.iw-code{
+	width: 90%;
+	margin: auto 2rem;
+}
+
+@media screen and (max-width: 950px) {
+
+	.spec-sheet{
+		margin: auto;
+	}
+	p{
+		font-size: 24px;
+	}
+
+	h1 {
+    	font-size: 40px;
+	}
+	h2{
+		font-size: 25px;
+	}
+
+	.main-content {
+    	display: block;
+	}
+
+	.main-content-left,
+	.main-content-right{
+		width: 100%;
+		margin: 0;
+	}
+
+	.main-content-right{
+		position: relative;
+	}
+
+	.design img{
+		left: -20rem;
+	    top: 10rem;
+	    width: 200%;
+	}
+
+
+	.main-fourm {
+	    margin: 20px;
+	    padding: 10px;
+	}
+
+	p.fourm-title {
+	    font-size: 20px;
+	}
+
+	.footer {
+	    display: block;
+	}
+
+	.iw-logo {
+		width: 100%;
+	    margin: 1rem;
+	}
+
+	.iw-code {
+	    width: 100%;
+	    margin: 1rem auto;
+	}
+
+	.iw-qr {
+	    width: 20%;
+	    margin: 1rem auto;
+	}
+
+
+	.main-content-left .pin:nth-child(1) {
+	    top: 2%;
+	    left: 1%;
+	}
+	.main-content-left .pin:nth-child(2) {
+		left: 97%;
+		top: 2%;
+		margin: auto;
+	}
+
+	.main-content-left .pin:nth-child(4) {
+		top: 95%;
+		left: 1%;
+	}
+
+	.main-content-left .pin:nth-child(5) {
+		left: 97%;
+		top: 95%;
+		margin: auto;
+	}
+
+
+
+	.main-content-right .pin:nth-child(1) {
+	    top: 2%;
+	    left: 2%;
+	}
+	.main-content-right .pin:nth-child(2) {
+	    left: 96%;
+	    top: 2%;
+	    margin: auto;
+	}
+
+	.main-content-right .pin:nth-child(4) {
+	    top: 95%;
+	    left: 2%;
+	}
+
+	.main-content-right .pin:nth-child(5) {
+	    left: 96%;
+	    top: 95%;
+	    margin: auto;
+	}
+
+
+
+}
